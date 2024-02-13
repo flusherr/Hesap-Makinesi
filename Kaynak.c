@@ -21,14 +21,17 @@ int main() {
 		sonuc = sayi1 + sayi2;
 		printf("\n Sonuc: %.0lf", sonuc);
 		break;
+
 	case '-':
 		sonuc = sayi1 - sayi2;
 		printf("\n Sonuc: %.0lf", sonuc);
 		break;
+	
 	case '*':
 		sonuc = sayi1 * sayi2;
 		printf("\n Sonuc: %.0lf", sonuc);
 		break;
+	
 	case '/':
 		sonuc = sayi1 / sayi2;
 		printf("\n Sonuc: %.0lf", sonuc);
@@ -36,6 +39,7 @@ int main() {
 
 	default:
 		printf("%c gecersiz bir islem!", islem);
+		return 1;
 	}
 	return 0;
 }
